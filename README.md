@@ -1,21 +1,22 @@
 # 🌐 Sachin's Full Stack Portfolio Website
 
-Welcome to my full stack portfolio project built using **HTML**, **CSS**, **JavaScript**, **Node.js**, **Express**, and **MongoDB**. This project highlights my work, skills, certifications, and includes a contact form that stores messages in a MongoDB database and displays them in an admin dashboard.
+Welcome to my Full Stack Developer Portfolio, built with **HTML, CSS, JavaScript, Node.js, Express, and MongoDB**. This project showcases my personal profile, skills, certifications, and includes a contact form connected to a backend server and database, with an admin dashboard to view incoming messages.
+
+🌟 **Live Preview**: [View Portfolio Website](https://sachin-0109-yadav.github.io/Personal-Portfolio/)
 
 ---
 
 ## 🚀 Features
 
-- 🧑‍💻 Personal Portfolio Homepage
-- 📄 About Me, Skills, Projects & Certifications Sections
-- 📬 Functional Contact Form (connected to MongoDB)
-- 🔐 Admin Dashboard to view contact messages
-- 🎨 Responsive Design with Modern UI
-- 🌍 Fully Functional Full Stack App (Frontend + Backend + Database)
+- 🧑‍💼 **About Me**, **Skills**, **Projects**, and **Certifications**
+- 📬 **Contact Form** – stores messages in MongoDB
+- 🔐 **Admin Dashboard** to view user messages
+- 💡 Responsive and interactive frontend
+- 🌍 Full Stack integration: **Frontend + Backend + Database**
 
 ---
 
-## 🔧 Tech Stack
+## 🧰 Tech Stack
 
 | Layer       | Technologies Used                     |
 |-------------|----------------------------------------|
@@ -26,14 +27,16 @@ Welcome to my full stack portfolio project built using **HTML**, **CSS**, **Java
 ---
 
 ## 📁 Folder Structure
+
 /port
 │
-├── index.html # Main portfolio page
-├── admin.html # Admin dashboard for viewing messages
-├── css/ # All styling files
-├── js/ # JavaScript for frontend
-├── models/ # MongoDB Mongoose schema files
-├── server.js # Express server and MongoDB connection
+├── index.html # Portfolio homepage
+├── admin.html # Admin dashboard (view messages)
+├── css/ # Stylesheets
+├── js/ # JavaScript files (frontend logic)
+├── models/ # MongoDB Mongoose schema
+├── server.js # Express backend + MongoDB connection
+├── package.json # Node project metadata
 └── README.md # This file
 
 
@@ -44,31 +47,80 @@ Welcome to my full stack portfolio project built using **HTML**, **CSS**, **Java
 ### 🔗 Prerequisites
 
 - Node.js installed
-- MongoDB installed locally or MongoDB Atlas URI
-- Basic terminal knowledge
+- MongoDB (local or MongoDB Atlas)
+- Code editor (VS Code recommended)
 
 ---
 
-### 📦 Installation Steps
+### ⚙️ Installation & Setup
 
 1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/portfolio-fullstack.git
-   cd portfolio-fullstack
+
+```bash
+git clone https://github.com/Sachin-0109-yadav/Personal-Portfolio.git
+cd Personal-Portfolio
+
+
 Install Dependencies
 npm install
-Start MongoDB (locally)
+
+Start MongoDB
+
+If local:
+
 mongod
-Open Project in Browser
 
-Frontend: file:///C:/Users/SACHIN/Desktop/port/index.html
+Run the Backend Server
+node server.js
+✅ Server will run at: http://localhost:3000/
 
-Admin Dashboard: http://localhost:3000/admin.html
+Access Your Project
+
+Section	URL
+Frontend (static)	file:///C:/Users/SACHIN/Desktop/port/index.html
+Admin Dashboard	http://localhost:3000/admin.html
+
+ Contact Form Integration
+➤ Sending Data (Frontend)
+fetch('/api/contact', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ name, email, message })
+});
 
 
-📬 Contact
-GitHub: @Sachin-0109-yadav
+Displaying Data (Admin Dashboard)
+fetch('/api/messages')
+  .then(res => res.json())
+  .then(data => {
+    // Render messages on the admin.html page
+  });
 
-LinkedIn: linkedin.com/in/sachin-yadav-0109
+---
 
+## 📸 Screenshots
+
+### 🏠 Homepage
+![Homepage](./screenshots/homepage.png)
+
+### 📬 Contact Form
+![Contact Form](./screenshots/contact-form.png)
+
+### 🔐 Admin Dashboard
+![Admin Dashboard](./screenshots/admin-dashboard.png)
+
+git add .
+git commit -m "📸 Added screenshots to README"
+git push
+
+
+🧑‍💻 Author
+Sachin Yadav
+
+🔗 GitHub: @Sachin-0109-yadav
+
+💼 LinkedIn: linkedin.com/in/sachin-yadav-0109
+
+📄 License
+This project is open-source and free to use for learning purposes. 🚀
 
