@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachin | Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+   body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  background: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  line-height: 1.8;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0;
+}
+
+    header {
+      background-color: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-top: 1rem;
+    }
+
+    nav {
+      background-color: #1e3799;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto; /* ✅ Centers content horizontally */
+  background: rgba(0, 0, 0, 0.4); /* Optional: slight background for readability */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: subtle depth */
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  max-width: 1000px;
+  padding: 2rem;
+  margin: 2rem auto;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-nav a {
+  color: #fff89a;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.section-nav a:hover {
+  color: #ffffff;
+}
+
+    h2 {
+  color: #fff89a; /* Light yellow */
+  margin-bottom: 1rem;
+}
+
+
+    ul {
+      margin-left: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0a3d62;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #0a3d62;
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #1e3799;
+    }
+
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      header img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1> Sachin Yadav </h1>
+    <a href="Sachin_Resume.pdf" target="_blank" class="btn">📄 Check My Resume</a>
+    <p>Full Stack Developer | Java Enthusiast | Data Analyst</p>
+    <img src="Sachin.jpg" alt="Sachin Yadav" />
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+  <h2>About Me</h2>
+  <p>
+    🚀 I’m <strong>Sachin Yadav</strong>, a highly motivated Computer Science student from <strong>Guru Gobind Singh Indraprastha University (GGSIPU)</strong>, passionate about solving real-world problems with technology. With a strong foundation in <strong>Java, full stack web development, and data analytics</strong>, I'm focused on creating software solutions that are both impactful and scalable.
+  </p>
+
+  <p>
+    Over the past year, I’ve enriched my skills through hands-on internships and certifications. Notably, I completed the prestigious <strong>Infosys AI Internship 6.0 via Springboard</strong>, where I explored machine learning algorithms, NLP fundamentals, and ethical AI frameworks using Python. I also interned with <strong>CSRBOX + IBM SkillsBuild</strong> in a data analytics role, gaining experience in Excel, Python, and data visualization tools to derive meaningful insights from large datasets.
+  </p>
+
+  <p>
+    My technical journey includes building an <strong>IoT-based Smart Dust Collector</strong> during my internship at <strong>AICTE Idea Lab, USICT</strong>. This project involved CAD modeling in Fusion 360, 3D printing, and laser engraving to design an efficient industrial system for environmental safety.
+  </p>
+
+  <p>
+    I’ve also explored a range of tools and technologies including <strong>MySQL, PostgreSQL, HTML, CSS, JavaScript, Python, C/C++, and Go</strong>. My work spans both frontend and backend development, along with hardware integration and AI.
+  </p>
+
+  <p>
+    Apart from tech, I’m a firm believer in the power of <strong>continuous learning, teamwork, and innovation</strong>. I love collaborating with like-minded people and contributing to meaningful, socially impactful projects. Currently, I’m exploring the <strong>Go programming language</strong> and always open to new ideas and collaborations.
+  </p>
+  <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+  <!-- Empty if it's the first section -->
+  <span></span>
+  <a href="#skills" style="color: #fff89a; font-weight: bold; text-decoration: none;">Next →</a>
+</div>
+
+</section>
+
+  <section id="skills">
+  <h2>Skills</h2>
+
+  <h3>👨‍💻 Programming Languages</h3>
+  <ul>
+    <li>C / C++ – Solid understanding of procedural programming and memory management</li>
+    <li>Java – OOP, JDBC, multithreading, exception handling, GUI with Swing</li>
+    <li>JavaScript – DOM manipulation, ES6 features, event handling</li>
+    <li>HTML5 & CSS3 – Semantic markup, responsive layouts, Flexbox/Grid</li>
+    <li>SQL – Writing complex queries, joins, subqueries in MySQL and PostgreSQL</li>
+    <li>Python (Basic) – Used in Data Analytics and AI projects</li>
+    <li>Go (Learning) – Exploring for backend and concurrency applications</li>
+  </ul>
+
+  <h3>🌐 Web Development</h3>
+  <ul>
+    <li>Front-End: HTML, CSS, JavaScript, basic Bootstrap</li>
+    <li>Back-End: Java (Servlets/JSP), Node.js (Basics)</li>
+    <li>Tools: VS Code, Postman, Git & GitHub</li>
+    <li>Deployment: GitHub Pages, basic Netlify</li>
+  </ul>
+
+  <h3>🧠 Data Structures & Algorithms</h3>
+  <ul>
+    <li>Proficient with arrays, linked lists, stacks, queues, trees, graphs</li>
+    <li>Problem-solving on platforms like LeetCode, HackerRank</li>
+    <li>Concepts: Recursion, sorting, searching, dynamic programming</li>
+  </ul>
+
+  <h3>📊 Data Analytics & AI</h3>
+  <ul>
+    <li>Excel – Data cleaning, pivot tables, charts</li>
+    <li>Python (pandas, matplotlib, seaborn basics)</li>
+    <li>Visualization Tools – Google Sheets, Canva (charts), basic Power BI</li>
+    <li>AI Concepts – ML algorithms (supervised/unsupervised), NLP, ethical AI</li>
+    <li>Platform Experience – IBM SkillsBuild, Infosys Springboard AI 6.0</li>
+  </ul>
+
+  <h3>🔧 IoT & Hardware Tools</h3>
+  <ul>
+    <li>Microcontrollers – Arduino (basic sensors & control systems)</li>
+    <li>3D Printing – CAD models with Fusion 360, slicer software</li>
+    <li>Laser Engraving – Designing and operating engravers</li>
+    <li>IoT Integration – Sensor-based project development & testing</li>
+  </ul>
+
+  <h3>🛠️ Software & Tools</h3>
+  <ul>
+    <li>CAD Design – Autodesk Fusion 360 (certified use in projects)</li>
+    <li>Version Control – Git, GitHub (project tracking, team collaboration)</li>
+    <li>OS – Windows, Basic Linux Terminal Operations</li>
+  </ul>
+
+  <h3>🗣️ Soft Skills</h3>
+  <ul>
+    <li>Problem-Solving – Logical thinking, analytical reasoning</li>
+    <li>Teamwork – Collaborated in internships, hackathons, group projects</li>
+    <li>Communication – Effective written and verbal communication</li>
+    <li>Self-Motivated – Consistent learner through Udemy, Forage, IBM</li>
+  </ul>
+  <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+  <a href="#about" style="color: #fff89a; font-weight: bold; text-decoration: none;">← Previous</a>
+  <a href="#projects" style="color: #fff89a; font-weight: bold; text-decoration: none;">Next →</a>
+</div>
+</section>
+
+
+  <section id="projects">
+  <h2>Projects</h2>
+
+  <h3>🔧 Smart Dust Collector</h3>
+  <p>
+    <strong>Internship:</strong> AICTE Idea Lab, USICT <br>
+    <strong>Technologies Used:</strong> Autodesk Fusion 360, 3D Printing, Laser Engraving, Arduino, Sensors
+  </p>
+  <p>
+    Designed and built a smart dust collection system for industrial environments using CAD modeling in Fusion 360 and physical prototyping with 3D printers and laser engraving machines. The system integrated environmental sensors and a microcontroller to detect and remove airborne particles, improving air quality and sustainability in workshop/lab areas.
+  </p>
+  <ul>
+    <li>Collaborated with a 4-member team to design and assemble the working prototype.</li>
+    <li>Developed CAD models and managed slicing for 3D printing components.</li>
+    <li>Tested and refined the system based on real-world performance.</li>
+  </ul>
+
+  <h3>🧠 AI & Machine Learning Projects</h3>
+  <p>
+    <strong>Internship:</strong> Infosys Springboard AI Internship 6.0 <br>
+    <strong>Technologies Used:</strong> Python, scikit-learn, Pandas, Jupyter Notebook
+  </p>
+  <p>
+    Built mini projects applying foundational machine learning algorithms such as Linear Regression, Decision Trees, and K-Means Clustering. Also explored Natural Language Processing (NLP) basics including text classification and sentiment analysis.
+  </p>
+  <ul>
+    <li>Implemented supervised and unsupervised models on real-world datasets.</li>
+    <li>Explored ethical AI concepts and bias mitigation techniques.</li>
+    <li>Strengthened Python coding and data preprocessing skills.</li>
+  </ul>
+
+  <h3>📊 Data Analytics Projects</h3>
+  <p>
+    <strong>Internship:</strong> IBM SkillsBuild & CSRBOX Data Analytics Program <br>
+    <strong>Technologies Used:</strong> Excel, Python, matplotlib, seaborn, Google Sheets
+  </p>
+  <p>
+    Conducted comprehensive data analysis and visualization tasks using both spreadsheet tools and Python libraries. Identified trends, cleaned large datasets, and presented key insights in a storytelling format to simulate client reporting.
+  </p>
+  <ul>
+    <li>Cleaned and analyzed datasets using Excel functions and Python scripts.</li>
+    <li>Built visual dashboards and presented summaries using charts and graphs.</li>
+    <li>Learned how to derive business value from data through clear interpretation.</li>
+  </ul>
+
+  <h3>🌐 Portfolio Website (This Site)</h3>
+  <p>
+    <strong>Technologies Used:</strong> HTML, CSS, JavaScript <br>
+    Designed and developed a responsive personal portfolio website to showcase my technical background, project work, skills, and certifications.
+  </p>
+  <ul>
+    <li>Built a modular layout with hero header, sections, and navigation bar.</li>
+    <li>Used Google Fonts and responsive media queries for a clean look on all devices.</li>
+    <li>Continuously updating this site with new sections, animations, and backend integration (coming soon).</li>
+  </ul>
+  <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+  <a href="#skills" style="color: #fff89a; font-weight: bold; text-decoration: none;">← Previous</a>
+  <a href="#certifications" style="color: #fff89a; font-weight: bold; text-decoration: none;">Next →</a>
+</div>
+
+</section>
+
+
+  <section id="certifications">
+  <h2>🎓 Certifications</h2>
+
+  <ul>
+    <li>
+      <strong>Java Training Complete Course for Beginners</strong><br>
+      <em>Udemy · Completed September 2024</em><br>
+      Gained comprehensive knowledge of Java syntax, object-oriented programming (OOP), exception handling, file I/O, and basic GUI development.
+    </li><br>
+
+    <li>
+      <strong>Data Analytics Internship Certification</strong><br>
+      <em>CSRBOX Foundation + IBM SkillsBuild · August 2024</em><br>
+      Completed a 6-week internship program with hands-on experience in Excel, Python (pandas, matplotlib), and data visualization techniques.
+    </li><br>
+
+    <li>
+      <strong>AI Internship 6.0</strong><br>
+      <em>Infosys Springboard · Completed June 2025</em><br>
+      Worked on foundational machine learning concepts including supervised/unsupervised learning, ethical AI, and NLP using Python.
+    </li><br>
+
+    <li>
+      <strong>Google Analytics Certification</strong><br>
+      <em>Google · Completed January 2025</em><br>
+      Gained knowledge of user behavior analysis, website performance tracking, and goal conversions using Google Analytics.
+    </li><br>
+
+    <li>
+      <strong>Google Ads Apps Certification</strong><br>
+      <em>Google · Completed February 2025</em><br>
+      Learned how to create effective app campaigns and analyze ad performance using Google Ads tools.
+    </li><br>
+
+    <li>
+      <strong>Cybersecurity Analyst Job Simulation</strong><br>
+      <em>Forage · Completed March 2025</em><br>
+      Explored IAM fundamentals, risk mitigation strategies, and access policy development in a virtual simulation environment.
+    </li><br>
+
+    <li>
+      <strong>OpenAI GPT-3 for Developers</strong><br>
+      <em>Infosys Springboard · Completed June 2025</em><br>
+      Understood the architecture and use cases of GPT models, including prompt design and implementation for AI-based tools.
+    </li><br>
+  </ul>
+  <div class="section-nav" style="display: flex; justify-content: flex-start; margin-top: 2rem;">
+  <a href="#projects" style="color: #fff89a; font-weight: bold; text-decoration: none;">← Previous</a>
+</div>
+
+</section>
+
+
+<section id="contact">
+    <section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="response-msg" style="margin-top: 1rem;"></p>
+</section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sachin01092004yadav@gmail.com">sachin01092004yadav@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Sachin-0109-yadav" target="_blank">github.com/Sachin-0109-yadav</a></p>
+    <p>Phone: <a href="tel:+918360645657">+91-8360645657</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sachin-31y08/" target="_blank">linkedin.com/in/sachin-31y08/</a></p>
+    <h3>📍 Location</h3>
+<div style="width: 100%; max-width: 1000px; margin: 1rem 0;">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14673.16714384868!2d77.02462690160148!3d28.617757965268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0554460df3b7%3A0x3b5a44103d89b4f1!2sJyoti%20Kunj%20CRPF%20Mandir!5e0!3m2!1sen!2sin!4v1751258675503!5m2!1sen!2sin"
+    width="100%" 
+    height="300" 
+    style="border: 2px solid #ffffff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sachin Yadav. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
